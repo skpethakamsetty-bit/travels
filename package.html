@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Packages | Travel Explorer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- =====================================================================
+       package.html - pure HTML5 + CSS3, no JavaScript.
+       Pick a destination card (a <label> tied to a hidden radio) and the
+       matching 6-step cost panel below shows automatically via :checked.
+       ===================================================================== -->
+
+  <!-- Hidden destination state: one radio per destination -->
+  <input type="radio" name="dest" id="d-canberra" class="dest-state" checked>
+  <input type="radio" name="dest" id="d-cairo" class="dest-state">
+  <input type="radio" name="dest" id="d-ankara" class="dest-state">
+  <input type="radio" name="dest" id="d-tokyo" class="dest-state">
+  <input type="radio" name="dest" id="d-lapland" class="dest-state">
+  <input type="radio" name="dest" id="d-golden" class="dest-state">
+  <input type="radio" name="dest" id="d-kerala" class="dest-state">
+  <input type="radio" name="dest" id="d-kasi" class="dest-state">
+  <input type="radio" name="dest" id="d-goa" class="dest-state">
+  <input type="radio" name="dest" id="d-rajasthan" class="dest-state">
+  <input type="radio" name="dest" id="d-hyderabad" class="dest-state">
+
+  <header class="navbar">
+    <div class="logo">TRAVEL EXPLORER</div>
+    <nav class="nav-links">
+      <a href="./index.html">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="./package.html">Packages</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Choose Your Package</h1>
+    <p>Select a destination to reveal its full 6-step package and total cost.</p>
+  </section>
+
+  <section id="destinations" class="packages-section">
+    <h2 class="section-title">International Destinations</h2>
+    <div class="pkg-grid">
+
+      <label class="pkg-card" for="d-canberra">
+        <img src="./australia.jpg" alt="australia">
+        <span class="pkg-select"></span>
+        <div class="pkg-card-body">
+          <h3>Canberra , Australia</h3>
+          <span class="badge">$1,780 / $1,65,000 / 7 Days</span>
+        </div>
+      </label>
+
+      <label class="pkg-card" for="d-cairo">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.aLm7pljc4uTC5_D1XVLt3QHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="egypt">
+        <span class="pkg-select"></span>
+        <div class="pkg-card-body">
+          <h3>egypt, Cairo</h3>
+          <span class="badge">$1,025 / $95,000 / 7 Days</span>
+        </div>
+      </label>
+
+      <label class="pkg-card" for="d-ankara">
+        <img src="./turkey.avif" alt="turkey">
+        <span class="pkg-select"></span>
+        <div class="pkg-card-body">
+          <h3>turkey, Ankara</h3>
+          <span class="badge">$1,185 / $1,10,000 / 6 Days</span>
+        </div>
+      </label>
+
+      <label class="pkg-card" for="d-tokyo">
+        <img src="https://www.agoda.com/wp-content/uploads/2018/07/Experience-Tokyo_landmarks_Rainbow-Bridge_Tokyo-Bay..jpg" alt="tokyo">
+        <span class="pkg-select"></span>
+        <div class="pkg-card-body">
+          <h3>japan, Tokyo</h3>
+          <span class="badge">$1,565 / $1,45,000 / 5 Days</span>
+        </div>
+      </label>
+
+      <label class="pkg-card" for="d-lapland">
+        <img src="./northern-7415567_1280.jpg" alt="Finland">
+        <span class="pkg-select"></span>
+        <div class="pkg-card-body">
+          <h3>Lapland , Finland</h3>
+          <span class="badge">$1,995 / $1,85,000 / 6 Days</span>
+        </div>
+      </label>
+
+    </div>
+
+    <h2 class="section-title">Indian Destinations</h2>
+    <div class="pkg-grid">
+
+      <label class="pkg-card" for="d-golden">
+        <img src="https://wallpaperaccess.com/full/1828859.jpg" alt="Golden Temple">
+        <span class="pkg-select"></span>
+        <div class="pkg-card-body">
+          <h3>Golden Temple, India</h3>
+          <span class="badge">$155 / $14,500 / 3 Days</span>
+        </div>
+      </label>
+
+      <label class="pkg-card" for="d-kerala">
+        <img src="./kerala.jpg" alt="kerala">
+        <span class="pkg-select"></span>
+        <div class="pkg-card-body">
+          <h3>kerala, India</h3>
+          <span class="badge">$200 / $18,500 / 4 Days</span>
+        </div>
+      </label>
+
+      <label class="pkg-card" for="d-kasi">
+        <img src="./kasi.webp" alt="kasi">
+        <span class="pkg-select"></span>
+        <div class="pkg-card-body">
+          <h3>kasi, India</h3>
+          <span class="badge">$145 / $13,500 / 3 Days</span>
+        </div>
+      </label>
+
+      <label class="pkg-card" for="d-goa">
+        <img src="https://wallpapers.com/images/hd/goa-beach-pictures-q3vmgtel313923el.jpg" alt="goa">
+        <span class="pkg-select"></span>
+        <div class="pkg-card-body">
+          <h3>goa, India</h3>
+          <span class="badge">$168 / $15,500 / 4 Days</span>
+        </div>
+      </label>
+
+      <label class="pkg-card" for="d-rajasthan">
+        <img src="./rajasthan.jpg" alt="rajasthan">
+        <span class="pkg-select"></span>
+        <div class="pkg-card-body">
+          <h3>rajasthan, India</h3>
+          <span class="badge">$168 / $15,500 / 4 Days</span>
+        </div>
+      </label>
+
+      <label class="pkg-card" for="d-hyderabad">
+        <img src="https://media.architecturaldigest.com/photos/67acb9b0339bcbaaadeb91b5/16:9/w_2560%2Cc_limit/GettyImages-873536102.jpg" alt="hyderabad">
+        <span class="pkg-select"></span>
+        <div class="pkg-card-body">
+          <h3>hyderabad, India</h3>
+          <span class="badge">$168 / $15,500 / 4 Days</span>
+        </div>
+      </label>
+
+    </div>
+  </section>
+
+  <!-- ===== 6-step package customizer & cost breakdown ===== -->
+  <section id="booking-calc" class="booking-section">
+    <h2 class="section-title">Package Details &amp; Cost Breakdown</h2>
+    <div class="pkg-details">
+
+      <!-- Canberra, Australia -->
+      <div class="pkg-panel" id="panel-canberra">
+        <div class="pkg-panel-head">
+          <h3>Canberra , Australia</h3>
+          <span class="badge">$1,780 / $1,65,000 / 7 Days</span>
+        </div>
+        <ol class="pkg-steps">
+          <li><span class="step-no">1</span><span class="step-name">Flight &amp; Travel</span><span class="step-cost">$620</span></li>
+          <li><span class="step-no">2</span><span class="step-name">Hotel &amp; Stay</span><span class="step-cost">$560</span></li>
+          <li><span class="step-no">3</span><span class="step-name">Meals (breakfast &amp; dinner)</span><span class="step-cost">$260</span></li>
+          <li><span class="step-no">4</span><span class="step-name">Sightseeing &amp; Activities</span><span class="step-cost">$240</span></li>
+          <li><span class="step-no">5</span><span class="step-name">Visa &amp; Taxes</span><span class="step-cost">$100</span></li>
+          <li class="step-total"><span class="step-no">6</span><span class="step-name">Total Cost</span><span class="step-cost">$1,780</span></li>
+        </ol>
+        <a href="./login.html" class="hero-btn pkg-cta-guest">Log In &amp; Book</a>
+        <span class="hero-btn pkg-cta-member">&#10003; Booking Confirmed</span>
+      </div>
+
+      <!-- Cairo, Egypt -->
+      <div class="pkg-panel" id="panel-cairo">
+        <div class="pkg-panel-head">
+          <h3>egypt, Cairo</h3>
+          <span class="badge">$1,025 / $95,000 / 7 Days</span>
+        </div>
+        <ol class="pkg-steps">
+          <li><span class="step-no">1</span><span class="step-name">Flight &amp; Travel</span><span class="step-cost">$380</span></li>
+          <li><span class="step-no">2</span><span class="step-name">Hotel &amp; Stay</span><span class="step-cost">$300</span></li>
+          <li><span class="step-no">3</span><span class="step-name">Meals (breakfast &amp; dinner)</span><span class="step-cost">$150</span></li>
+          <li><span class="step-no">4</span><span class="step-name">Sightseeing &amp; Activities</span><span class="step-cost">$135</span></li>
+          <li><span class="step-no">5</span><span class="step-name">Visa &amp; Taxes</span><span class="step-cost">$60</span></li>
+          <li class="step-total"><span class="step-no">6</span><span class="step-name">Total Cost</span><span class="step-cost">$1,025</span></li>
+        </ol>
+        <a href="./login.html" class="hero-btn pkg-cta-guest">Log In &amp; Book</a>
+        <span class="hero-btn pkg-cta-member">&#10003; Booking Confirmed</span>
+      </div>
+
+      <!-- Ankara, Turkey -->
+      <div class="pkg-panel" id="panel-ankara">
+        <div class="pkg-panel-head">
+          <h3>turkey, Ankara</h3>
+          <span class="badge">$1,185 / $1,10,000 / 6 Days</span>
+        </div>
+        <ol class="pkg-steps">
+          <li><span class="step-no">1</span><span class="step-name">Flight &amp; Travel</span><span class="step-cost">$430</span></li>
+          <li><span class="step-no">2</span><span class="step-name">Hotel &amp; Stay</span><span class="step-cost">$360</span></li>
+          <li><span class="step-no">3</span><span class="step-name">Meals (breakfast &amp; dinner)</span><span class="step-cost">$170</span></li>
+          <li><span class="step-no">4</span><span class="step-name">Sightseeing &amp; Activities</span><span class="step-cost">$160</span></li>
+          <li><span class="step-no">5</span><span class="step-name">Visa &amp; Taxes</span><span class="step-cost">$65</span></li>
+          <li class="step-total"><span class="step-no">6</span><span class="step-name">Total Cost</span><span class="step-cost">$1,185</span></li>
+        </ol>
+        <a href="./login.html" class="hero-btn pkg-cta-guest">Log In &amp; Book</a>
+        <span class="hero-btn pkg-cta-member">&#10003; Booking Confirmed</span>
+      </div>
+
+      <!-- Tokyo, Japan -->
+      <div class="pkg-panel" id="panel-tokyo">
+        <div class="pkg-panel-head">
+          <h3>japan, Tokyo</h3>
+          <span class="badge">$1,565 / $1,45,000 / 5 Days</span>
+        </div>
+        <ol class="pkg-steps">
+          <li><span class="step-no">1</span><span class="step-name">Flight &amp; Travel</span><span class="step-cost">$560</span></li>
+          <li><span class="step-no">2</span><span class="step-name">Hotel &amp; Stay</span><span class="step-cost">$520</span></li>
+          <li><span class="step-no">3</span><span class="step-name">Meals (breakfast &amp; dinner)</span><span class="step-cost">$220</span></li>
+          <li><span class="step-no">4</span><span class="step-name">Sightseeing &amp; Activities</span><span class="step-cost">$195</span></li>
+          <li><span class="step-no">5</span><span class="step-name">Visa &amp; Taxes</span><span class="step-cost">$70</span></li>
+          <li class="step-total"><span class="step-no">6</span><span class="step-name">Total Cost</span><span class="step-cost">$1,565</span></li>
+        </ol>
+        <a href="./login.html" class="hero-btn pkg-cta-guest">Log In &amp; Book</a>
+        <span class="hero-btn pkg-cta-member">&#10003; Booking Confirmed</span>
+      </div>
+
+      <!-- Lapland, Finland -->
+      <div class="pkg-panel" id="panel-lapland">
+        <div class="pkg-panel-head">
+          <h3>Lapland , Finland</h3>
+          <span class="badge">$1,995 / $1,85,000 / 6 Days</span>
+        </div>
+        <ol class="pkg-steps">
+          <li><span class="step-no">1</span><span class="step-name">Flight &amp; Travel</span><span class="step-cost">$700</span></li>
+          <li><span class="step-no">2</span><span class="step-name">Hotel &amp; Stay</span><span class="step-cost">$720</span></li>
+          <li><span class="step-no">3</span><span class="step-name">Meals (breakfast &amp; dinner)</span><span class="step-cost">$250</span></li>
+          <li><span class="step-no">4</span><span class="step-name">Sightseeing &amp; Activities</span><span class="step-cost">$255</span></li>
+          <li><span class="step-no">5</span><span class="step-name">Visa &amp; Taxes</span><span class="step-cost">$70</span></li>
+          <li class="step-total"><span class="step-no">6</span><span class="step-name">Total Cost</span><span class="step-cost">$1,995</span></li>
+        </ol>
+        <a href="./login.html" class="hero-btn pkg-cta-guest">Log In &amp; Book</a>
+        <span class="hero-btn pkg-cta-member">&#10003; Booking Confirmed</span>
+      </div>
+
+      <!-- Golden Temple, India -->
+      <div class="pkg-panel" id="panel-golden">
+        <div class="pkg-panel-head">
+          <h3>Golden Temple, India</h3>
+          <span class="badge">$155 / $14,500 / 3 Days</span>
+        </div>
+        <ol class="pkg-steps">
+          <li><span class="step-no">1</span><span class="step-name">Flight &amp; Travel</span><span class="step-cost">$60</span></li>
+          <li><span class="step-no">2</span><span class="step-name">Hotel &amp; Stay</span><span class="step-cost">$45</span></li>
+          <li><span class="step-no">3</span><span class="step-name">Meals (breakfast &amp; dinner)</span><span class="step-cost">$22</span></li>
+          <li><span class="step-no">4</span><span class="step-name">Sightseeing &amp; Activities</span><span class="step-cost">$20</span></li>
+          <li><span class="step-no">5</span><span class="step-name">Visa &amp; Taxes</span><span class="step-cost">$8</span></li>
+          <li class="step-total"><span class="step-no">6</span><span class="step-name">Total Cost</span><span class="step-cost">$155</span></li>
+        </ol>
+        <a href="./login.html" class="hero-btn pkg-cta-guest">Log In &amp; Book</a>
+        <span class="hero-btn pkg-cta-member">&#10003; Booking Confirmed</span>
+      </div>
+
+      <!-- Kerala, India -->
+      <div class="pkg-panel" id="panel-kerala">
+        <div class="pkg-panel-head">
+          <h3>kerala, India</h3>
+          <span class="badge">$200 / $18,500 / 4 Days</span>
+        </div>
+        <ol class="pkg-steps">
+          <li><span class="step-no">1</span><span class="step-name">Flight &amp; Travel</span><span class="step-cost">$70</span></li>
+          <li><span class="step-no">2</span><span class="step-name">Hotel &amp; Stay</span><span class="step-cost">$62</span></li>
+          <li><span class="step-no">3</span><span class="step-name">Meals (breakfast &amp; dinner)</span><span class="step-cost">$30</span></li>
+          <li><span class="step-no">4</span><span class="step-name">Sightseeing &amp; Activities</span><span class="step-cost">$28</span></li>
+          <li><span class="step-no">5</span><span class="step-name">Visa &amp; Taxes</span><span class="step-cost">$10</span></li>
+          <li class="step-total"><span class="step-no">6</span><span class="step-name">Total Cost</span><span class="step-cost">$200</span></li>
+        </ol>
+        <a href="./login.html" class="hero-btn pkg-cta-guest">Log In &amp; Book</a>
+        <span class="hero-btn pkg-cta-member">&#10003; Booking Confirmed</span>
+      </div>
+
+      <!-- Kasi, India -->
+      <div class="pkg-panel" id="panel-kasi">
+        <div class="pkg-panel-head">
+          <h3>kasi, India</h3>
+          <span class="badge">$145 / $13,500 / 3 Days</span>
+        </div>
+        <ol class="pkg-steps">
+          <li><span class="step-no">1</span><span class="step-name">Flight &amp; Travel</span><span class="step-cost">$55</span></li>
+          <li><span class="step-no">2</span><span class="step-name">Hotel &amp; Stay</span><span class="step-cost">$42</span></li>
+          <li><span class="step-no">3</span><span class="step-name">Meals (breakfast &amp; dinner)</span><span class="step-cost">$20</span></li>
+          <li><span class="step-no">4</span><span class="step-name">Sightseeing &amp; Activities</span><span class="step-cost">$20</span></li>
+          <li><span class="step-no">5</span><span class="step-name">Visa &amp; Taxes</span><span class="step-cost">$8</span></li>
+          <li class="step-total"><span class="step-no">6</span><span class="step-name">Total Cost</span><span class="step-cost">$145</span></li>
+        </ol>
+        <a href="./login.html" class="hero-btn pkg-cta-guest">Log In &amp; Book</a>
+        <span class="hero-btn pkg-cta-member">&#10003; Booking Confirmed</span>
+      </div>
+
+      <!-- Goa, India -->
+      <div class="pkg-panel" id="panel-goa">
+        <div class="pkg-panel-head">
+          <h3>goa, India</h3>
+          <span class="badge">$168 / $15,500 / 4 Days</span>
+        </div>
+        <ol class="pkg-steps">
+          <li><span class="step-no">1</span><span class="step-name">Flight &amp; Travel</span><span class="step-cost">$60</span></li>
+          <li><span class="step-no">2</span><span class="step-name">Hotel &amp; Stay</span><span class="step-cost">$52</span></li>
+          <li><span class="step-no">3</span><span class="step-name">Meals (breakfast &amp; dinner)</span><span class="step-cost">$26</span></li>
+          <li><span class="step-no">4</span><span class="step-name">Sightseeing &amp; Activities</span><span class="step-cost">$22</span></li>
+          <li><span class="step-no">5</span><span class="step-name">Visa &amp; Taxes</span><span class="step-cost">$8</span></li>
+          <li class="step-total"><span class="step-no">6</span><span class="step-name">Total Cost</span><span class="step-cost">$168</span></li>
+        </ol>
+        <a href="./login.html" class="hero-btn pkg-cta-guest">Log In &amp; Book</a>
+        <span class="hero-btn pkg-cta-member">&#10003; Booking Confirmed</span>
+      </div>
+
+      <!-- Rajasthan, India -->
+      <div class="pkg-panel" id="panel-rajasthan">
+        <div class="pkg-panel-head">
+          <h3>rajasthan, India</h3>
+          <span class="badge">$168 / $15,500 / 4 Days</span>
+        </div>
+        <ol class="pkg-steps">
+          <li><span class="step-no">1</span><span class="step-name">Flight &amp; Travel</span><span class="step-cost">$60</span></li>
+          <li><span class="step-no">2</span><span class="step-name">Hotel &amp; Stay</span><span class="step-cost">$52</span></li>
+          <li><span class="step-no">3</span><span class="step-name">Meals (breakfast &amp; dinner)</span><span class="step-cost">$26</span></li>
+          <li><span class="step-no">4</span><span class="step-name">Sightseeing &amp; Activities</span><span class="step-cost">$22</span></li>
+          <li><span class="step-no">5</span><span class="step-name">Visa &amp; Taxes</span><span class="step-cost">$8</span></li>
+          <li class="step-total"><span class="step-no">6</span><span class="step-name">Total Cost</span><span class="step-cost">$168</span></li>
+        </ol>
+        <a href="./login.html" class="hero-btn pkg-cta-guest">Log In &amp; Book</a>
+        <span class="hero-btn pkg-cta-member">&#10003; Booking Confirmed</span>
+      </div>
+
+      <!-- Hyderabad, India -->
+      <div class="pkg-panel" id="panel-hyderabad">
+        <div class="pkg-panel-head">
+          <h3>hyderabad, India</h3>
+          <span class="badge">$168 / $15,500 / 4 Days</span>
+        </div>
+        <ol class="pkg-steps">
+          <li><span class="step-no">1</span><span class="step-name">Flight &amp; Travel</span><span class="step-cost">$60</span></li>
+          <li><span class="step-no">2</span><span class="step-name">Hotel &amp; Stay</span><span class="step-cost">$52</span></li>
+          <li><span class="step-no">3</span><span class="step-name">Meals (breakfast &amp; dinner)</span><span class="step-cost">$26</span></li>
+          <li><span class="step-no">4</span><span class="step-name">Sightseeing &amp; Activities</span><span class="step-cost">$22</span></li>
+          <li><span class="step-no">5</span><span class="step-name">Visa &amp; Taxes</span><span class="step-cost">$8</span></li>
+          <li class="step-total"><span class="step-no">6</span><span class="step-name">Total Cost</span><span class="step-cost">$168</span></li>
+        </ol>
+        <a href="./login.html" class="hero-btn pkg-cta-guest">Log In &amp; Book</a>
+        <span class="hero-btn pkg-cta-member">&#10003; Booking Confirmed</span>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="contact" class="footer">
+    <p>&copy; 2026 Travel Explorer. Crafted for Adventure.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Explorer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- =====================================================================
+       SINGLE PAGE, TWO MODES - pure HTML5 + CSS3, no JavaScript.
+
+       * Guest mode  : plain index.html  (no "#member" in the address)
+       * Member mode : index.html#member (what the login page links to)
+
+       The mode is detected with :target / :has(). Elements marked
+       "guest-only" show for guests, "member-only" show for members.
+       ===================================================================== -->
+  <main id="member">
+
+    <header class="navbar">
+      <div class="logo">TRAVEL EXPLORER</div>
+      <nav class="nav-links">
+        <a href="#home" class="member-only">Home</a>
+        <a href="#destinations" class="member-only">Destinations</a>
+        <a href="./package.html">Packages</a>
+        <a href="#contact" class="member-only">Contact</a>
+        <a href="./login.html" class="guest-only">Login</a>
+        <span class="member-badge member-only">&#10003; Member</span>
+      </nav>
+    </header>
+
+    <!-- Shown only to guests -->
+    <div class="guest-banner guest-only">
+      &#128274; You are browsing as a guest &mdash;
+      <a href="./login.html">log in</a> to book any destination.
+    </div>
+
+    <section id="home" class="hero">
+      <h1>Explore the World Without Limits</h1>
+      <p>Curated luxury escapes, scenic adventures, and unforgettable memories.</p>
+      <a href="./login.html" class="hero-btn guest-only">Log In to Start Exploring</a>
+      <a href="#destinations" class="hero-btn member-only">Start Exploring</a>
+    </section>
+
+    <!-- img carousel -->
+    <section id="featured" class="carousel-section">
+      <h2 class="section-title">Featured Escapes</h2>
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <img src="./australia.jpg" alt="australia">
+          <div class="slide-caption">
+            <h3>Canberra, Australia</h3>
+            <p>the Great Barrier Reef and Whitsunday Islands, Melbourne and the scenic Great Ocean Road, Uluru in the Red Centre.</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="./northern-7415567_1280.jpg" alt="Finland">
+          <div class="slide-caption">
+            <h3>Lapland, Finland</h3>
+            <p>Northern lights, glass igloos, and magical winter snow.</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="./turkey.avif" alt="turkey">
+          <div class="slide-caption">
+            <h3>Ankara, Turkey</h3>
+            <p>Pamukkales white thermal terraces, the ancient Greco-Roman ruins of Ephesus and Mount Nemrut.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- international place cards -->
+    <section id="destinations" class="packages-section">
+      <h2 class="section-title">International Destinations</h2>
+      <div class="cards-container">
+
+        <div class="card">
+          <div class="card-img">
+            <img src="https://th.bing.com/th/id/OIG3.hMxYrEkD8s3BjspgB.M.?pid=ImgGn" alt="australia">
+          </div>
+          <div class="card-content">
+            <span class="badge">$1,780 / $1,65,000 / 7 Days</span>
+            <h3>Canberra , Australia</h3>
+            <p>the Great Barrier Reef and Whitsunday Islands, Melbourne and the scenic Great Ocean Road, Uluru in the Red Centre.</p>
+            <a href="./login.html" class="card-btn guest-only">Login to Book</a>
+            <a href="./package.html#booking-calc" class="card-btn member-only">Book Now</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.aLm7pljc4uTC5_D1XVLt3QHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="egypt">
+          </div>
+          <div class="card-content">
+            <span class="badge">$1,025 / $95,000 / 7 Days</span>
+            <h3>egypt, Cairo</h3>
+            <p>Cairo is a modern metropolis, with a rich history, vibrant culture, and a diverse population.</p>
+            <a href="./login.html" class="card-btn guest-only">Login to Book</a>
+            <a href="./package.html#booking-calc" class="card-btn member-only">Book Now</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="https://th.bing.com/th/id/OIP.oia5Q-2Rtq4lBP0MjjT-mgHaE7?r=0&pid=CanonicalCanvas" alt="turkey">
+          </div>
+          <div class="card-content">
+            <span class="badge">$1,185 / $1,10,000 / 6 Days</span>
+            <h3>turkey, Ankara</h3>
+            <p>Pamukkales white thermal terraces, the ancient Greco-Roman ruins of Ephesus and Mount Nemrut.</p>
+            <a href="./login.html" class="card-btn guest-only">Login to Book</a>
+            <a href="./package.html#booking-calc" class="card-btn member-only">Book Now</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="https://www.agoda.com/wp-content/uploads/2018/07/Experience-Tokyo_landmarks_Rainbow-Bridge_Tokyo-Bay..jpg" alt="tokyo">
+          </div>
+          <div class="card-content">
+            <span class="badge">$1,565 / $1,45,000 / 5 Days</span>
+            <h3>japan, Tokyo</h3>
+            <p>Tokyo is a modern metropolis, with a rich history, vibrant culture, and a diverse population.</p>
+            <a href="./login.html" class="card-btn guest-only">Login to Book</a>
+            <a href="./package.html#booking-calc" class="card-btn member-only">Book Now</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.fU6yyTQ9wGck-RiVjXOsHQHaEo?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Finland">
+          </div>
+          <div class="card-content">
+            <span class="badge">$1,995 / $1,85,000 / 6 Days</span>
+            <h3>Lapland , Finland</h3>
+            <p>Northern lights, glass igloos, and magical winter snow.</p>
+            <a href="./login.html" class="card-btn guest-only">Login to Book</a>
+            <a href="./package.html#booking-calc" class="card-btn member-only">Book Now</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- indian place cards -->
+    <section id="packages" class="packages-section">
+      <h2 class="section-title">Indian Destinations</h2>
+      <div class="cards-container">
+
+        <div class="card">
+          <div class="card-img">
+            <img src="https://wallpaperaccess.com/full/1828859.jpg" alt="Golden Temple">
+          </div>
+          <div class="card-content">
+            <span class="badge">$155 / $14,500 / 3 Days</span>
+            <h3>Golden Temple, India</h3>
+            <p>Golden Temple is a famous religious site in India, known for its grandeur and beauty.</p>
+            <a href="./login.html" class="card-btn guest-only">Login to Book</a>
+            <a href="./package.html#booking-calc" class="card-btn member-only">Book Now</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/045/380/070/small_2x/houseboat-on-kerala-backwaters-india-photo.jpg" alt="kerala">
+          </div>
+          <div class="card-content">
+            <span class="badge">$200 / $18,500 / 4 Days</span>
+            <h3>kerala, India</h3>
+            <p>kerala is a famous religious site in India, known for its grandeur and beauty.</p>
+            <a href="./login.html" class="card-btn guest-only">Login to Book</a>
+            <a href="./package.html#booking-calc" class="card-btn member-only">Book Now</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="https://cdn.getyourguide.com/img/tour/6460977f7a8b8.jpeg/98.jpg" alt="kasi">
+          </div>
+          <div class="card-content">
+            <span class="badge">$145 / $13,500 / 3 Days</span>
+            <h3>kasi, India</h3>
+            <p>kasi is a famous religious site in India, known for its grandeur and beauty.</p>
+            <a href="./login.html" class="card-btn guest-only">Login to Book</a>
+            <a href="./package.html#booking-calc" class="card-btn member-only">Book Now</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="https://wallpapers.com/images/hd/goa-beach-pictures-q3vmgtel313923el.jpg" alt="goa">
+          </div>
+          <div class="card-content">
+            <span class="badge">$168 / $15,500 / 4 Days</span>
+            <h3>goa, India</h3>
+            <p>goa is a famous religious site in India, known for its grandeur and beauty.</p>
+            <a href="./login.html" class="card-btn guest-only">Login to Book</a>
+            <a href="./package.html#booking-calc" class="card-btn member-only">Book Now</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="https://deih43ym53wif.cloudfront.net/india-jodhpur-mehrangarh-fort-shutterstock_273400190_3fee5c0b96.jpeg" alt="rajasthan">
+          </div>
+          <div class="card-content">
+            <span class="badge">$168 / $15,500 / 4 Days</span>
+            <h3>rajasthan, India</h3>
+            <p>rajasthan is a famous religious site in India, known for its grandeur and beauty.</p>
+            <a href="./login.html" class="card-btn guest-only">Login to Book</a>
+            <a href="./package.html#booking-calc" class="card-btn member-only">Book Now</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="https://media.architecturaldigest.com/photos/67acb9b0339bcbaaadeb91b5/16:9/w_2560%2Cc_limit/GettyImages-873536102.jpg" alt="hyderabad">
+          </div>
+          <div class="card-content">
+            <span class="badge">$168 / $15,500 / 4 Days</span>
+            <h3>hyderabad, India</h3>
+            <p>hyderabad is a famous religious site in India, known for its grandeur and beauty.</p>
+            <a href="./login.html" class="card-btn guest-only">Login to Book</a>
+            <a href="./package.html#booking-calc" class="card-btn member-only">Book Now</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <p>&copy; 2026 Travel Explorer. Crafted for Adventure.</p>
+    </footer>
+  </main>
+
+</body>
+</html>
